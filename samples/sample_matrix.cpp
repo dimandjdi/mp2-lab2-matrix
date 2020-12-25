@@ -7,25 +7,28 @@
 
 #include <iostream>
 #include "utmatrix.h"
+#include <string.h>
 //---------------------------------------------------------------------------
 
 void main()
 {
-  TMatrix<int> a(5), b(5), c(5);
-  int i, j;
+    TMatrix<int> a(5);
+  TMatrix<int> b(5);
+  TMatrix<int> c(5);
 
   setlocale(LC_ALL, "Russian");
   cout << "Тестирование программ поддержки представления треугольных матриц"
     << endl;
-  for (i = 0; i < 5; i++)
-    for (j = i; j < 5; j++ )
+  for (int i = 0; i < 5; i++)
+    for (int j = 0; j < 5; j++ )
     {
-      a[i][j] =  i * 10 + j;
-      b[i][j] = (i * 10 + j) * 100;
+      a[i][j] =  i * 5 + j;
+      b[i][j] = (i * 5 + j) * 50;
     }
   c = a + b;
   cout << "Matrix a = " << endl << a << endl;
   cout << "Matrix b = " << endl << b << endl;
   cout << "Matrix c = a + b" << endl << c << endl;
+
 }
 //---------------------------------------------------------------------------

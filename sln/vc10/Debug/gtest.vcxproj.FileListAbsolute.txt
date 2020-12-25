@@ -1,0 +1,2 @@
+C:\Users\roma1\source\repos\mp2-lab2-matrix\sln\vc10\Debug\gtest.lib
+C:\Users\roma1\source\repos\mp2-lab2-matrix\sln\vc10\Debug\gtest.pdb
